@@ -34,19 +34,19 @@ public class PlayerController : MonoBehaviour
         switch (direction)
         {
             case 1:
-                playerRB.velocity = new Vector2 (0, 120);
+                playerRB.velocity = new Vector2 (0, 150);
                 moveNormal = new Vector2 (0, -1);
                 break;
             case 2:
-                playerRB.velocity = new Vector2(0, -120);
+                playerRB.velocity = new Vector2(0, -150);
                 moveNormal = new Vector2(0, 1);
                 break;
             case 3:
-                playerRB.velocity = new Vector2(120, 0);
+                playerRB.velocity = new Vector2(150, 0);
                 moveNormal = new Vector2(-1, 0);
                 break;
             case 4:
-                playerRB.velocity = new Vector2(-120, 0);
+                playerRB.velocity = new Vector2(-150, 0);
                 moveNormal = new Vector2(1, 0);
                 break;
 
