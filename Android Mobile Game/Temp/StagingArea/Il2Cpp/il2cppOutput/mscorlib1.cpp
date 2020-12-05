@@ -36124,6 +36124,15 @@ IL_003c:
 		return L_8;
 	}
 }
+// System.Void System.CharEnumerator::Reset()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void CharEnumerator_Reset_m75A334B23292DDADDD4823E93D8292B690D19829 (CharEnumerator_t307E02F1AF2C2C98EE2FFEEE3045A790F2140D75 * __this, const RuntimeMethod* method)
+{
+	{
+		__this->set_currentElement_2(0);
+		__this->set_index_1((-1));
+		return;
+	}
+}
 // System.Void System.CharEnumerator::.ctor()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void CharEnumerator__ctor_mC88EF64AFC0D2C039B3265A76AC61A65BC3D2FED (CharEnumerator_t307E02F1AF2C2C98EE2FFEEE3045A790F2140D75 * __this, const RuntimeMethod* method)
 {

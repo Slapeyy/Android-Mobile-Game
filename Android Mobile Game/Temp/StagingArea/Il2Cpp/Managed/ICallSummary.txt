@@ -382,8 +382,13 @@ UnityEngine.Object::SetName
 UnityEngine.Object::set_hideFlags
 UnityEngine.Object::FindObjectFromInstanceID
 UnityEngine.Object::Internal_CloneSingle
+UnityEngine.Physics::get_defaultPhysicsScene_Injected
+UnityEngine.Physics::Internal_RaycastAll_Injected
 UnityEngine.Physics2D::get_queriesHitTriggers
 UnityEngine.Physics2D::GetRayIntersectionAll_Internal_Injected
+UnityEngine.PhysicsScene::Internal_RaycastTest_Injected
+UnityEngine.PhysicsScene::Internal_Raycast_Injected
+UnityEngine.PhysicsScene::Internal_RaycastNonAlloc_Injected
 UnityEngine.PhysicsScene2D::GetRayIntersectionArray_Internal_Injected
 UnityEngine.PhysicsScene2D::RaycastArray_Internal_Injected
 UnityEngine.PhysicsScene2D::RaycastList_Internal_Injected
