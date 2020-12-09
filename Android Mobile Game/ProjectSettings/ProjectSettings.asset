@@ -250,8 +250,7 @@ PlayerSettings:
   AndroidTargetArchitectures: 3
   AndroidSplashScreenScale: 0
   androidSplashScreen: {fileID: 0}
-  AndroidKeystoreName: C:/Users/charl/Documents/Android-Mobile-Game/Android Mobile
-    Game/Assets/Keystore/GMC Keystore.keystore
+  AndroidKeystoreName: '{inproject}: Assets/Keystore/GMC Keystore.keystore'
   AndroidKeyaliasName: key1
   AndroidBuildApkPerCpuArchitecture: 0
   AndroidTVCompatibility: 0
