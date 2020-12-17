@@ -7,36 +7,34 @@ using UnityEngine.UI;
 public class EndScene : MonoBehaviour
 {
     public GameObject EndScreen;
-    public Text StarRatingText;
+    public Text starRatingText;
+    public Text levelText;
+
     int maxGems;
     public int movesLeftForWin;
 
     private void Start()
     {
         maxGems = GameObject.FindGameObjectsWithTag("Gem").Length;
+        levelText.text = SceneManager.GetActiveScene().buildIndex.ToString();
+        if (SceneManager.GetActiveScene().buildIndex == 0)
+            levelText.text = "Tutorial";
     }
 
     public void EndGame(int gems, int moves)
     {
-        if (SceneManager.GetActiveScene().buildIndex < 5)
-        {
-            EndScreen.SetActive(true);
-
-            if (gems == maxGems && moves >= movesLeftForWin)
-                StarRatingText.text = "You have finished the Tutorial Level with a GOLD star rating!";
-            else if (gems < maxGems && moves >= movesLeftForWin)
-                StarRatingText.text = "You have finished the Tutorial Level with a SILVER star rating!";
-            else if (gems < maxGems && moves < movesLeftForWin)
-                StarRatingText.text = "You have finished the Tutorial Level with a BRONZE star rating!";
-
-
-                            
-        }    
+        EndScreen.SetActive(true);
+        if (gems == maxGems && moves >= movesLeftForWin)
+            starRatingText.text = "You have finished Level: " + SceneManager.GetActiveScene().buildIndex + " with a GOLD star rating!";
+        else if (gems < maxGems && moves >= movesLeftForWin)
+            starRatingText.text = "You have finished Level: " + SceneManager.GetActiveScene().buildIndex + " with a SILVER star rating!";
+        else if (gems < maxGems && moves < movesLeftForWin)
+            starRatingText.text = "You have finished Level: " + SceneManager.GetActiveScene().buildIndex + "  with a BRONZE star rating!";                
     }
 
     private void Update()
     {
-        if(EndScreen.activeSelf == true && Input.GetKeyDown(KeyCode.Return))
+        if(EndScreen.activeSelf == true && Input.GetKeyDown(KeyCode.Return) && SceneManager.GetActiveScene().buildIndex < 5)
             SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
     }
 

@@ -1,4 +1,5 @@
 ﻿using System.Collections;
+using System;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
@@ -91,26 +92,27 @@ public class PlayerController : MonoBehaviour
             return; 
         }
 
+        float speed = 150;
             //Up = 1, Down = 2, Right = 3, Left = 4
         switch (direction)
         {
             case 1:
-                playerRB.velocity = new Vector2 (0, 150);
+                playerRB.velocity = new Vector2 (0, speed);
                 moveNormal = new Vector2 (0, -1);
                 playerSprite.sprite = player_anim[4];
                 break;
             case 2:
-                playerRB.velocity = new Vector2(0, -150);
+                playerRB.velocity = new Vector2(0, -speed);
                 moveNormal = new Vector2(0, 1);
                 playerSprite.sprite = player_anim[2];
                 break;
             case 3:
-                playerRB.velocity = new Vector2(150, 0);
+                playerRB.velocity = new Vector2(speed, 0);
                 moveNormal = new Vector2(-1, 0);
                 playerSprite.sprite = player_anim[11];
                 break;
             case 4:
-                playerRB.velocity = new Vector2(-150, 0);
+                playerRB.velocity = new Vector2(-speed, 0);
                 moveNormal = new Vector2(1, 0);
                 playerSprite.sprite = player_anim[8];
                 break;
@@ -125,14 +127,18 @@ public class PlayerController : MonoBehaviour
 
     public void Reset()
     {
-        moves = int.Parse(movesTxt.text);
+        //moves = Convert.ToInt32(movesTxt.text);
+        int movesParse;
+        if (int.TryParse(movesTxt.text, out movesParse))
+        {
+            moves = movesParse;
+        }
         moving = false;
         gems = 0;
     }
 
     private void OnCollisionStay2D(Collision2D collision)
     {
-
         ContactPoint2D contact = collision.contacts[0];
         if (collision.collider.gameObject.tag == "Obstacle")
         {   
