@@ -31,11 +31,9 @@ public class EndScene : MonoBehaviour
         else if (gems < maxGems && moves < movesLeftForWin)
             starRatingText.text = "You have finished Level: " + SceneManager.GetActiveScene().buildIndex + "  with a BRONZE star rating!";                
     }
-
-    private void Update()
+    public void NextLevel() 
     {
-        if(EndScreen.activeSelf == true && Input.GetKeyDown(KeyCode.Return) && SceneManager.GetActiveScene().buildIndex < 5)
-            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
     }
 
     private void OnTriggerEnter2D(Collider2D collider)
