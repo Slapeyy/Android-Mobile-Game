@@ -92,7 +92,7 @@ public class PlayerController : MonoBehaviour
             return; 
         }
 
-        float speed = 150;
+        float speed = 450;
             //Up = 1, Down = 2, Right = 3, Left = 4
         switch (direction)
         {
