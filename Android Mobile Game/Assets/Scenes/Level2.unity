@@ -136,6 +136,7 @@ GameObject:
   - component: {fileID: 43180285}
   - component: {fileID: 43180284}
   - component: {fileID: 43180283}
+  - component: {fileID: 43180287}
   m_Layer: 5
   m_Name: Ice_Wall_Edge_Piece_2 (6)
   m_TagString: Obstacle
@@ -277,6 +278,27 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!50 &43180287
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 43180281}
+  m_BodyType: 2
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
 --- !u!224 &49377975 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 6525746697256362481, guid: efeebf2752cbd0c4da3dd0c5bec39990,
@@ -296,6 +318,7 @@ GameObject:
   - component: {fileID: 101038693}
   - component: {fileID: 101038692}
   - component: {fileID: 101038691}
+  - component: {fileID: 101038695}
   m_Layer: 5
   m_Name: Ice_Wall_Bottom_Piece_2
   m_TagString: Obstacle
@@ -437,6 +460,27 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!50 &101038695
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 101038689}
+  m_BodyType: 2
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
 --- !u!1 &101699336
 GameObject:
   m_ObjectHideFlags: 0
@@ -450,6 +494,7 @@ GameObject:
   - component: {fileID: 101699340}
   - component: {fileID: 101699339}
   - component: {fileID: 101699338}
+  - component: {fileID: 101699342}
   m_Layer: 5
   m_Name: _ce_Floor (24)
   m_TagString: Obstacle
@@ -591,6 +636,27 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!50 &101699342
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 101699336}
+  m_BodyType: 2
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
 --- !u!1 &103584450
 GameObject:
   m_ObjectHideFlags: 0
@@ -873,7 +939,7 @@ Rigidbody2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 163776657}
-  m_BodyType: 1
+  m_BodyType: 2
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
@@ -1057,6 +1123,7 @@ GameObject:
   - component: {fileID: 237454260}
   - component: {fileID: 237454259}
   - component: {fileID: 237454258}
+  - component: {fileID: 237454262}
   m_Layer: 5
   m_Name: _ce_Floor (11)
   m_TagString: Obstacle
@@ -1198,6 +1265,27 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!50 &237454262
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 237454256}
+  m_BodyType: 2
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
 --- !u!1 &248951558
 GameObject:
   m_ObjectHideFlags: 0
@@ -1211,6 +1299,7 @@ GameObject:
   - component: {fileID: 248951562}
   - component: {fileID: 248951561}
   - component: {fileID: 248951560}
+  - component: {fileID: 248951564}
   m_Layer: 5
   m_Name: _ce_Floor (37)
   m_TagString: Obstacle
@@ -1352,6 +1441,27 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!50 &248951564
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 248951558}
+  m_BodyType: 2
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
 --- !u!1 &272187989
 GameObject:
   m_ObjectHideFlags: 0
@@ -1887,6 +1997,7 @@ GameObject:
   - component: {fileID: 342666022}
   - component: {fileID: 342666021}
   - component: {fileID: 342666020}
+  - component: {fileID: 342666024}
   m_Layer: 5
   m_Name: _ce_Floor (43)
   m_TagString: Obstacle
@@ -2028,6 +2139,27 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!50 &342666024
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 342666018}
+  m_BodyType: 2
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
 --- !u!1 &347292207
 GameObject:
   m_ObjectHideFlags: 0
@@ -2041,6 +2173,7 @@ GameObject:
   - component: {fileID: 347292211}
   - component: {fileID: 347292210}
   - component: {fileID: 347292209}
+  - component: {fileID: 347292213}
   m_Layer: 5
   m_Name: _ce_Floor (40)
   m_TagString: Obstacle
@@ -2182,6 +2315,27 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!50 &347292213
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 347292207}
+  m_BodyType: 2
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
 --- !u!1 &370305037
 GameObject:
   m_ObjectHideFlags: 0
@@ -2345,6 +2499,7 @@ GameObject:
   - component: {fileID: 380143737}
   - component: {fileID: 380143736}
   - component: {fileID: 380143735}
+  - component: {fileID: 380143739}
   m_Layer: 5
   m_Name: _ce_Floor (35)
   m_TagString: Obstacle
@@ -2486,6 +2641,27 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!50 &380143739
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 380143733}
+  m_BodyType: 2
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
 --- !u!1 &459732601
 GameObject:
   m_ObjectHideFlags: 0
@@ -2579,6 +2755,7 @@ GameObject:
   - component: {fileID: 469052549}
   - component: {fileID: 469052548}
   - component: {fileID: 469052547}
+  - component: {fileID: 469052551}
   m_Layer: 5
   m_Name: _ce_Floor (15)
   m_TagString: Obstacle
@@ -2720,6 +2897,27 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!50 &469052551
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 469052545}
+  m_BodyType: 2
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
 --- !u!1 &505066905
 GameObject:
   m_ObjectHideFlags: 0
@@ -2733,6 +2931,7 @@ GameObject:
   - component: {fileID: 505066909}
   - component: {fileID: 505066908}
   - component: {fileID: 505066907}
+  - component: {fileID: 505066911}
   m_Layer: 5
   m_Name: Ice_Wall_Bottom_Piece_2 (5)
   m_TagString: Obstacle
@@ -2874,6 +3073,27 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!50 &505066911
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 505066905}
+  m_BodyType: 2
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
 --- !u!1 &529702701
 GameObject:
   m_ObjectHideFlags: 0
@@ -3237,6 +3457,7 @@ GameObject:
   - component: {fileID: 563167637}
   - component: {fileID: 563167636}
   - component: {fileID: 563167635}
+  - component: {fileID: 563167639}
   m_Layer: 5
   m_Name: _ce_Floor (12)
   m_TagString: Obstacle
@@ -3378,6 +3599,27 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!50 &563167639
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 563167633}
+  m_BodyType: 2
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
 --- !u!1 &591044122
 GameObject:
   m_ObjectHideFlags: 0
@@ -3466,6 +3708,7 @@ GameObject:
   - component: {fileID: 604331379}
   - component: {fileID: 604331378}
   - component: {fileID: 604331377}
+  - component: {fileID: 604331381}
   m_Layer: 5
   m_Name: Ice_Wall_Bottom_Piece_2 (4)
   m_TagString: Obstacle
@@ -3607,6 +3850,27 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!50 &604331381
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 604331375}
+  m_BodyType: 2
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
 --- !u!1 &632666182
 GameObject:
   m_ObjectHideFlags: 0
@@ -3620,6 +3884,7 @@ GameObject:
   - component: {fileID: 632666186}
   - component: {fileID: 632666185}
   - component: {fileID: 632666184}
+  - component: {fileID: 632666188}
   m_Layer: 5
   m_Name: _ce_Floor (13)
   m_TagString: Obstacle
@@ -3761,6 +4026,27 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!50 &632666188
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 632666182}
+  m_BodyType: 2
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
 --- !u!1 &646957796
 GameObject:
   m_ObjectHideFlags: 0
@@ -3774,6 +4060,7 @@ GameObject:
   - component: {fileID: 646957800}
   - component: {fileID: 646957799}
   - component: {fileID: 646957798}
+  - component: {fileID: 646957802}
   m_Layer: 5
   m_Name: Ice_Wall_Bottom_Piece_2 (1)
   m_TagString: Obstacle
@@ -3915,6 +4202,27 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!50 &646957802
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 646957796}
+  m_BodyType: 2
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
 --- !u!1 &654054688
 GameObject:
   m_ObjectHideFlags: 0
@@ -3928,6 +4236,7 @@ GameObject:
   - component: {fileID: 654054692}
   - component: {fileID: 654054691}
   - component: {fileID: 654054690}
+  - component: {fileID: 654054694}
   m_Layer: 5
   m_Name: _ce_Floor (32)
   m_TagString: Obstacle
@@ -4069,6 +4378,27 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!50 &654054694
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 654054688}
+  m_BodyType: 2
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
 --- !u!1 &673345510
 GameObject:
   m_ObjectHideFlags: 0
@@ -4232,6 +4562,7 @@ GameObject:
   - component: {fileID: 692228409}
   - component: {fileID: 692228408}
   - component: {fileID: 692228407}
+  - component: {fileID: 692228411}
   m_Layer: 5
   m_Name: _ce_Floor (20)
   m_TagString: Obstacle
@@ -4373,6 +4704,27 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!50 &692228411
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 692228405}
+  m_BodyType: 2
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
 --- !u!1 &722208492
 GameObject:
   m_ObjectHideFlags: 0
@@ -4386,6 +4738,7 @@ GameObject:
   - component: {fileID: 722208496}
   - component: {fileID: 722208495}
   - component: {fileID: 722208494}
+  - component: {fileID: 722208498}
   m_Layer: 5
   m_Name: Ice_Wall_Edge_Piece_2 (2)
   m_TagString: Obstacle
@@ -4527,6 +4880,27 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!50 &722208498
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 722208492}
+  m_BodyType: 2
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
 --- !u!1 &724595981
 GameObject:
   m_ObjectHideFlags: 0
@@ -4540,6 +4914,7 @@ GameObject:
   - component: {fileID: 724595985}
   - component: {fileID: 724595984}
   - component: {fileID: 724595983}
+  - component: {fileID: 724595987}
   m_Layer: 5
   m_Name: Ice_Wall_Edge_Piece_2 (3)
   m_TagString: Obstacle
@@ -4681,6 +5056,27 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!50 &724595987
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 724595981}
+  m_BodyType: 2
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
 --- !u!1 &734648956
 GameObject:
   m_ObjectHideFlags: 0
@@ -4770,6 +5166,7 @@ GameObject:
   - component: {fileID: 766758114}
   - component: {fileID: 766758113}
   - component: {fileID: 766758112}
+  - component: {fileID: 766758116}
   m_Layer: 5
   m_Name: _ce_Floor (16)
   m_TagString: Obstacle
@@ -4911,6 +5308,27 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!50 &766758116
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 766758110}
+  m_BodyType: 2
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
 --- !u!1 &767089599
 GameObject:
   m_ObjectHideFlags: 0
@@ -5074,6 +5492,7 @@ GameObject:
   - component: {fileID: 781188279}
   - component: {fileID: 781188278}
   - component: {fileID: 781188277}
+  - component: {fileID: 781188281}
   m_Layer: 5
   m_Name: _ce_Floor (21)
   m_TagString: Obstacle
@@ -5215,6 +5634,27 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!50 &781188281
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 781188275}
+  m_BodyType: 2
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
 --- !u!1 &823275951
 GameObject:
   m_ObjectHideFlags: 0
@@ -5227,8 +5667,9 @@ GameObject:
   - component: {fileID: 823275955}
   - component: {fileID: 823275954}
   - component: {fileID: 823275953}
+  - component: {fileID: 823275956}
   m_Layer: 5
-  m_Name: _dited_Rock
+  m_Name: Edited_Rock
   m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5278,7 +5719,7 @@ BoxCollider2D:
   m_AutoTiling: 0
   serializedVersion: 2
   m_Size: {x: 30.723946, y: 34.505127}
-  m_EdgeRadius: 0
+  m_EdgeRadius: 0.5
 --- !u!114 &823275954
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5317,6 +5758,27 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 823275951}
   m_CullTransparentMesh: 0
+--- !u!50 &823275956
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 823275951}
+  m_BodyType: 2
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
 --- !u!1 &868510481
 GameObject:
   m_ObjectHideFlags: 0
@@ -5454,7 +5916,7 @@ Rigidbody2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 893052161}
-  m_BodyType: 1
+  m_BodyType: 2
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
@@ -6052,6 +6514,7 @@ GameObject:
   - component: {fileID: 973913610}
   - component: {fileID: 973913609}
   - component: {fileID: 973913608}
+  - component: {fileID: 973913612}
   m_Layer: 5
   m_Name: _ce_Floor (31)
   m_TagString: Obstacle
@@ -6193,6 +6656,27 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!50 &973913612
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 973913606}
+  m_BodyType: 2
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
 --- !u!1 &980942219
 GameObject:
   m_ObjectHideFlags: 0
@@ -6322,7 +6806,7 @@ Rigidbody2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 981772968}
-  m_BodyType: 1
+  m_BodyType: 2
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
@@ -6382,6 +6866,7 @@ GameObject:
   - component: {fileID: 986059898}
   - component: {fileID: 986059897}
   - component: {fileID: 986059896}
+  - component: {fileID: 986059900}
   m_Layer: 5
   m_Name: _ce_Floor (14)
   m_TagString: Obstacle
@@ -6523,6 +7008,27 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!50 &986059900
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 986059894}
+  m_BodyType: 2
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
 --- !u!1 &993590872
 GameObject:
   m_ObjectHideFlags: 0
@@ -6536,6 +7042,7 @@ GameObject:
   - component: {fileID: 993590876}
   - component: {fileID: 993590875}
   - component: {fileID: 993590874}
+  - component: {fileID: 993590878}
   m_Layer: 5
   m_Name: Ice_Wall_Top_Piece (1)
   m_TagString: Obstacle
@@ -6677,6 +7184,27 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!50 &993590878
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 993590872}
+  m_BodyType: 2
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
 --- !u!1 &1029554517
 GameObject:
   m_ObjectHideFlags: 0
@@ -6690,6 +7218,7 @@ GameObject:
   - component: {fileID: 1029554521}
   - component: {fileID: 1029554520}
   - component: {fileID: 1029554519}
+  - component: {fileID: 1029554523}
   m_Layer: 5
   m_Name: _ce_Floor (28)
   m_TagString: Obstacle
@@ -6831,6 +7360,27 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!50 &1029554523
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1029554517}
+  m_BodyType: 2
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
 --- !u!1 &1032602565
 GameObject:
   m_ObjectHideFlags: 0
@@ -6946,6 +7496,7 @@ GameObject:
   - component: {fileID: 1098093287}
   - component: {fileID: 1098093286}
   - component: {fileID: 1098093285}
+  - component: {fileID: 1098093289}
   m_Layer: 5
   m_Name: _ce_Floor (41)
   m_TagString: Obstacle
@@ -7087,6 +7638,27 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!50 &1098093289
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1098093283}
+  m_BodyType: 2
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
 --- !u!1 &1153301721
 GameObject:
   m_ObjectHideFlags: 0
@@ -7175,6 +7747,7 @@ GameObject:
   - component: {fileID: 1160929109}
   - component: {fileID: 1160929108}
   - component: {fileID: 1160929107}
+  - component: {fileID: 1160929111}
   m_Layer: 5
   m_Name: Ice_Wall_Bottom_Piece_2 (3)
   m_TagString: Obstacle
@@ -7316,6 +7889,27 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!50 &1160929111
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1160929105}
+  m_BodyType: 2
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
 --- !u!1 &1171575172
 GameObject:
   m_ObjectHideFlags: 0
@@ -7479,6 +8073,7 @@ GameObject:
   - component: {fileID: 1180746569}
   - component: {fileID: 1180746568}
   - component: {fileID: 1180746567}
+  - component: {fileID: 1180746571}
   m_Layer: 5
   m_Name: Ice_Wall_Edge_Piece_2 (5)
   m_TagString: Obstacle
@@ -7620,6 +8215,27 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!50 &1180746571
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1180746565}
+  m_BodyType: 2
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
 --- !u!1 &1185503372
 GameObject:
   m_ObjectHideFlags: 0
@@ -7889,6 +8505,7 @@ GameObject:
   - component: {fileID: 1201337599}
   - component: {fileID: 1201337598}
   - component: {fileID: 1201337597}
+  - component: {fileID: 1201337601}
   m_Layer: 5
   m_Name: _ce_Floor (30)
   m_TagString: Obstacle
@@ -8030,6 +8647,27 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!50 &1201337601
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1201337595}
+  m_BodyType: 2
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
 --- !u!1 &1218771548
 GameObject:
   m_ObjectHideFlags: 0
@@ -8043,6 +8681,7 @@ GameObject:
   - component: {fileID: 1218771552}
   - component: {fileID: 1218771551}
   - component: {fileID: 1218771550}
+  - component: {fileID: 1218771554}
   m_Layer: 5
   m_Name: _ce_Floor (34)
   m_TagString: Obstacle
@@ -8184,6 +8823,27 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!50 &1218771554
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1218771548}
+  m_BodyType: 2
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
 --- !u!1 &1224220337
 GameObject:
   m_ObjectHideFlags: 0
@@ -8196,6 +8856,7 @@ GameObject:
   - component: {fileID: 1224220341}
   - component: {fileID: 1224220340}
   - component: {fileID: 1224220339}
+  - component: {fileID: 1224220342}
   m_Layer: 5
   m_Name: Ice_Wall_Corner_Intersection
   m_TagString: Obstacle
@@ -8311,6 +8972,27 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!50 &1224220342
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1224220337}
+  m_BodyType: 2
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
 --- !u!1 &1228883997
 GameObject:
   m_ObjectHideFlags: 0
@@ -8399,6 +9081,7 @@ GameObject:
   - component: {fileID: 1229605614}
   - component: {fileID: 1229605613}
   - component: {fileID: 1229605612}
+  - component: {fileID: 1229605616}
   m_Layer: 5
   m_Name: Ice_Wall_Bottom_Corner_Piece
   m_TagString: Obstacle
@@ -8540,6 +9223,27 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!50 &1229605616
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1229605610}
+  m_BodyType: 2
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
 --- !u!1 &1234423295
 GameObject:
   m_ObjectHideFlags: 0
@@ -8777,6 +9481,7 @@ GameObject:
   - component: {fileID: 1313574883}
   - component: {fileID: 1313574882}
   - component: {fileID: 1313574881}
+  - component: {fileID: 1313574884}
   m_Layer: 5
   m_Name: Rock Obstable 3
   m_TagString: Obstacle
@@ -8867,6 +9572,27 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1313574879}
   m_CullTransparentMesh: 0
+--- !u!50 &1313574884
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1313574879}
+  m_BodyType: 2
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
 --- !u!1 &1328998919
 GameObject:
   m_ObjectHideFlags: 0
@@ -9034,6 +9760,7 @@ GameObject:
   - component: {fileID: 1350263937}
   - component: {fileID: 1350263936}
   - component: {fileID: 1350263935}
+  - component: {fileID: 1350263939}
   m_Layer: 5
   m_Name: Ice_Wall_Top_Piece (2)
   m_TagString: Obstacle
@@ -9175,6 +9902,27 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!50 &1350263939
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1350263933}
+  m_BodyType: 2
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
 --- !u!1 &1367198531
 GameObject:
   m_ObjectHideFlags: 0
@@ -9280,6 +10028,7 @@ GameObject:
   - component: {fileID: 1383286446}
   - component: {fileID: 1383286445}
   - component: {fileID: 1383286444}
+  - component: {fileID: 1383286448}
   m_Layer: 5
   m_Name: _ce_Floor (39)
   m_TagString: Obstacle
@@ -9421,6 +10170,27 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!50 &1383286448
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1383286442}
+  m_BodyType: 2
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
 --- !u!1 &1384795113
 GameObject:
   m_ObjectHideFlags: 0
@@ -9474,7 +10244,7 @@ Rigidbody2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1384795113}
-  m_BodyType: 1
+  m_BodyType: 2
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
@@ -9534,6 +10304,7 @@ GameObject:
   - component: {fileID: 1405718834}
   - component: {fileID: 1405718833}
   - component: {fileID: 1405718832}
+  - component: {fileID: 1405718836}
   m_Layer: 5
   m_Name: _ce_Floor (27)
   m_TagString: Obstacle
@@ -9675,6 +10446,27 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!50 &1405718836
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1405718830}
+  m_BodyType: 2
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
 --- !u!1 &1413974716
 GameObject:
   m_ObjectHideFlags: 0
@@ -9688,6 +10480,7 @@ GameObject:
   - component: {fileID: 1413974720}
   - component: {fileID: 1413974719}
   - component: {fileID: 1413974718}
+  - component: {fileID: 1413974722}
   m_Layer: 5
   m_Name: _ce_Floor (42)
   m_TagString: Obstacle
@@ -9829,6 +10622,27 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!50 &1413974722
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1413974716}
+  m_BodyType: 2
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
 --- !u!1 &1438821154
 GameObject:
   m_ObjectHideFlags: 0
@@ -9992,6 +10806,7 @@ GameObject:
   - component: {fileID: 1468693007}
   - component: {fileID: 1468693006}
   - component: {fileID: 1468693005}
+  - component: {fileID: 1468693009}
   m_Layer: 5
   m_Name: Ice_Wall_Bottom_Piece_2 (2)
   m_TagString: Obstacle
@@ -10133,6 +10948,27 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!50 &1468693009
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1468693003}
+  m_BodyType: 2
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
 --- !u!1 &1493501288
 GameObject:
   m_ObjectHideFlags: 0
@@ -10300,6 +11136,7 @@ GameObject:
   - component: {fileID: 1539876554}
   - component: {fileID: 1539876553}
   - component: {fileID: 1539876552}
+  - component: {fileID: 1539876556}
   m_Layer: 5
   m_Name: _ce_Floor (26)
   m_TagString: Obstacle
@@ -10441,6 +11278,27 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!50 &1539876556
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1539876550}
+  m_BodyType: 2
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
 --- !u!1 &1560669753
 GameObject:
   m_ObjectHideFlags: 0
@@ -10454,6 +11312,7 @@ GameObject:
   - component: {fileID: 1560669757}
   - component: {fileID: 1560669756}
   - component: {fileID: 1560669755}
+  - component: {fileID: 1560669759}
   m_Layer: 5
   m_Name: _ce_Floor (33)
   m_TagString: Obstacle
@@ -10595,6 +11454,27 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!50 &1560669759
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1560669753}
+  m_BodyType: 2
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
 --- !u!1 &1577337819
 GameObject:
   m_ObjectHideFlags: 0
@@ -10608,6 +11488,7 @@ GameObject:
   - component: {fileID: 1577337823}
   - component: {fileID: 1577337822}
   - component: {fileID: 1577337821}
+  - component: {fileID: 1577337825}
   m_Layer: 5
   m_Name: Ice_Wall_Edge_Piece_2 (7)
   m_TagString: Obstacle
@@ -10749,6 +11630,27 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!50 &1577337825
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1577337819}
+  m_BodyType: 2
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
 --- !u!1 &1588513149
 GameObject:
   m_ObjectHideFlags: 0
@@ -10762,6 +11664,7 @@ GameObject:
   - component: {fileID: 1588513153}
   - component: {fileID: 1588513152}
   - component: {fileID: 1588513151}
+  - component: {fileID: 1588513155}
   m_Layer: 5
   m_Name: Ice_Wall_Edge_Piece_2 (8)
   m_TagString: Obstacle
@@ -10903,6 +11806,27 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!50 &1588513155
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1588513149}
+  m_BodyType: 2
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
 --- !u!1 &1627285095
 GameObject:
   m_ObjectHideFlags: 0
@@ -11115,6 +12039,7 @@ GameObject:
   - component: {fileID: 1664001171}
   - component: {fileID: 1664001170}
   - component: {fileID: 1664001169}
+  - component: {fileID: 1664001173}
   m_Layer: 5
   m_Name: Ice_Wall_Edge_Piece_2 (4)
   m_TagString: Obstacle
@@ -11256,6 +12181,27 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!50 &1664001173
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1664001167}
+  m_BodyType: 2
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
 --- !u!1 &1664653962
 GameObject:
   m_ObjectHideFlags: 0
@@ -11716,6 +12662,7 @@ GameObject:
   - component: {fileID: 1725725504}
   - component: {fileID: 1725725503}
   - component: {fileID: 1725725502}
+  - component: {fileID: 1725725506}
   m_Layer: 5
   m_Name: _ce_Floor (19)
   m_TagString: Obstacle
@@ -11857,6 +12804,27 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!50 &1725725506
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1725725500}
+  m_BodyType: 2
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
 --- !u!1 &1770524624
 GameObject:
   m_ObjectHideFlags: 0
@@ -11870,6 +12838,7 @@ GameObject:
   - component: {fileID: 1770524628}
   - component: {fileID: 1770524627}
   - component: {fileID: 1770524626}
+  - component: {fileID: 1770524630}
   m_Layer: 5
   m_Name: _ce_Floor (38)
   m_TagString: Obstacle
@@ -12011,6 +12980,27 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!50 &1770524630
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1770524624}
+  m_BodyType: 2
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
 --- !u!1 &1787117937
 GameObject:
   m_ObjectHideFlags: 0
@@ -12383,6 +13373,7 @@ GameObject:
   - component: {fileID: 1954555963}
   - component: {fileID: 1954555962}
   - component: {fileID: 1954555961}
+  - component: {fileID: 1954555965}
   m_Layer: 5
   m_Name: _ce_Floor (25)
   m_TagString: Obstacle
@@ -12524,6 +13515,27 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!50 &1954555965
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1954555959}
+  m_BodyType: 2
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
 --- !u!1 &2005669431
 GameObject:
   m_ObjectHideFlags: 0
@@ -12614,6 +13626,7 @@ GameObject:
   - component: {fileID: 2037407274}
   - component: {fileID: 2037407273}
   - component: {fileID: 2037407272}
+  - component: {fileID: 2037407276}
   m_Layer: 5
   m_Name: _ce_Floor (22)
   m_TagString: Obstacle
@@ -12755,6 +13768,27 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!50 &2037407276
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2037407270}
+  m_BodyType: 2
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
 --- !u!1 &2063180539
 GameObject:
   m_ObjectHideFlags: 0
@@ -12768,6 +13802,7 @@ GameObject:
   - component: {fileID: 2063180543}
   - component: {fileID: 2063180542}
   - component: {fileID: 2063180541}
+  - component: {fileID: 2063180545}
   m_Layer: 5
   m_Name: _ce_Floor (36)
   m_TagString: Obstacle
@@ -12909,6 +13944,27 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!50 &2063180545
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2063180539}
+  m_BodyType: 2
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
 --- !u!1 &2085642210
 GameObject:
   m_ObjectHideFlags: 0
@@ -13076,6 +14132,7 @@ GameObject:
   - component: {fileID: 2103930513}
   - component: {fileID: 2103930512}
   - component: {fileID: 2103930511}
+  - component: {fileID: 2103930515}
   m_Layer: 5
   m_Name: _ce_Floor (29)
   m_TagString: Obstacle
@@ -13217,6 +14274,27 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!50 &2103930515
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2103930509}
+  m_BodyType: 2
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
 --- !u!1 &2106929763
 GameObject:
   m_ObjectHideFlags: 0
@@ -13305,6 +14383,7 @@ GameObject:
   - component: {fileID: 2110833723}
   - component: {fileID: 2110833722}
   - component: {fileID: 2110833721}
+  - component: {fileID: 2110833725}
   m_Layer: 5
   m_Name: Ice_Wall_Top_Corner_Piece_2
   m_TagString: Obstacle
@@ -13446,3 +14525,24 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!50 &2110833725
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2110833719}
+  m_BodyType: 2
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0

@@ -97,7 +97,7 @@ Rigidbody2D:
   m_AngularDrag: 0.05
   m_GravityScale: 0
   m_Material: {fileID: 0}
-  m_Interpolate: 0
+  m_Interpolate: 1
   m_SleepingMode: 1
   m_CollisionDetection: 1
   m_Constraints: 4
@@ -141,6 +141,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   swipeControl: {fileID: 6525746697256362486}
   moves: 0
+  gems: 0
   player_anim:
   - {fileID: -8697619403676207202, guid: 0cf349fd06f1c2f4592322018c6cddcf, type: 3}
   - {fileID: -2421456024785073712, guid: 0cf349fd06f1c2f4592322018c6cddcf, type: 3}

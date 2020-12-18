@@ -12,6 +12,8 @@ public class PlayerController : MonoBehaviour
     public List<Sprite> player_anim;
     public Text movesTxt;
 
+    public Text testText;
+
     Rigidbody2D playerRB;
     Collider2D playerCollider;
     RectTransform thisRect;
@@ -137,46 +139,66 @@ public class PlayerController : MonoBehaviour
         gems = 0;
     }
 
+    
     private void OnCollisionStay2D(Collision2D collision)
     {
-        ContactPoint2D contact = collision.contacts[0];
+        ContactPoint2D contact = collision.GetContact(0);
+        if (testText != null) testText.text = "point normal" + contact.normal;
+
+        moves++;
         if (collision.collider.gameObject.tag == "Obstacle")
-        {   
+        {
             playerRB.velocity = new Vector2(0, 0);
-            
+
             float m_x = thisRect.localPosition.x;
             float m_y = thisRect.localPosition.y;
             //Debug.Log("Contact normal is: " + contact.normal);
             //Debug.Log("X pos at hit is: " + m_x);
             //Debug.Log("Y pos at hit is: " + m_y);
-            moving = false;
 
-            if (contact.normal.x == -1)
+            Vector2 right = new Vector2 (-1, 0);
+            Vector2 left = new Vector2(1, 0);
+            Vector2 up = new Vector2(0, -1);
+            Vector2 down = new Vector2(0, 1);
+
+
+            moving = false;
+            if (contact.normal == right)
             {
                 m_x = m_x - 10;
                 playerSprite.sprite = player_anim[9];
-            }
-
-            else if (contact.normal.x == 1)
-            {
-                m_x = m_x + 10;
-                playerSprite.sprite = player_anim[6];
-            }
-
-            if (contact.normal.y == -1)
-            {
-                m_y = m_y - 10;
-                playerSprite.sprite = player_anim[5];
-            }
-
-            else if (contact.normal.y == 1)
-            {
-                m_y = m_y + 10;
-                playerSprite.sprite = player_anim[0];
                 
             }
 
+            else if (contact.normal == left)
+            {
+                m_x = m_x + 10;
+                playerSprite.sprite = player_anim[6];
+                moves = 8;
+            }
+
+            else if (contact.normal == up)
+            {
+                m_y = m_y - 10;
+                playerSprite.sprite = player_anim[5];
+                moves = 7;
+            }
+
+            else if (contact.normal == down)
+            {
+                m_y = m_y + 10;
+                playerSprite.sprite = player_anim[0];
+                moves = 6;
+            }
+            else 
+            {
+                //if(collision.collider.gameObject.name == "")
+            
+            }
+            
+
             thisRect.localPosition = new Vector3 (m_x, m_y, thisRect.localPosition.z);
+
             
             //Debug.Log("Y pos after hit is: " + thisRect.localPosition.y);
         }
@@ -184,15 +206,16 @@ public class PlayerController : MonoBehaviour
         
 
     }
+    
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.gameObject.tag == "Gem")
         {
             gems++;
-            Destroy(collision.gameObject);
-                
+            Destroy(collision.gameObject);       
         }
+        
     }
 
 }
