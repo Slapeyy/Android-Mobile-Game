@@ -3,6 +3,7 @@ using System;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class PlayerController : MonoBehaviour
 {
@@ -12,8 +13,7 @@ public class PlayerController : MonoBehaviour
     public List<Sprite> player_anim;
     public Text movesTxt;
 
-    public Text testText;
-
+    public GameObject retryScreen;
     Rigidbody2D playerRB;
     Collider2D playerCollider;
     RectTransform thisRect;
@@ -49,40 +49,9 @@ public class PlayerController : MonoBehaviour
         if (swipeControl.SwipeL)
             Move(4);
 
-        if (playerCollider.IsTouchingLayers(obstacleMask)) 
-        {
-            float m_x = thisRect.localPosition.x;
-            float m_y = thisRect.localPosition.y;
-
-            if (playerSprite.sprite == player_anim[4])
-            {
-                m_x = m_x - 10;
-                playerSprite.sprite = player_anim[9];
-            }
-
-            else if (playerSprite.sprite == player_anim[2])
-            {
-                m_x = m_x + 10;
-                playerSprite.sprite = player_anim[6];
-            }
-
-            if (playerSprite.sprite == player_anim[11])
-            {
-                m_y = m_y - 10;
-                playerSprite.sprite = player_anim[5];
-            }
-
-            else if (playerSprite.sprite == player_anim[8])
-            {
-                m_y = m_y + 10;
-                playerSprite.sprite = player_anim[0];
-
-            }
-
-            thisRect.localPosition = new Vector3(m_x, m_y, thisRect.localPosition.z);
-
-        }
         movesTxt.text = moves.ToString();
+
+        if (moves <= 0) retryScreen.SetActive(true);
     }
 
 
@@ -94,7 +63,7 @@ public class PlayerController : MonoBehaviour
             return; 
         }
 
-        float speed = 450;
+        float speed = 150;
             //Up = 1, Down = 2, Right = 3, Left = 4
         switch (direction)
         {
@@ -129,7 +98,6 @@ public class PlayerController : MonoBehaviour
 
     public void Reset()
     {
-        //moves = Convert.ToInt32(movesTxt.text);
         int movesParse;
         if (int.TryParse(movesTxt.text, out movesParse))
         {
@@ -139,13 +107,21 @@ public class PlayerController : MonoBehaviour
         gems = 0;
     }
 
+    public void RestartLevel() 
+    { 
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+    }
+
+    public void MainMenu()
+    {
+        SceneManager.LoadScene("Main Menu");
+    }
+
     
     private void OnCollisionStay2D(Collision2D collision)
     {
         ContactPoint2D contact = collision.GetContact(0);
-        if (testText != null) testText.text = "point normal" + contact.normal;
 
-        moves++;
         if (collision.collider.gameObject.tag == "Obstacle")
         {
             playerRB.velocity = new Vector2(0, 0);
@@ -174,29 +150,20 @@ public class PlayerController : MonoBehaviour
             {
                 m_x = m_x + 10;
                 playerSprite.sprite = player_anim[6];
-                moves = 8;
             }
 
             else if (contact.normal == up)
             {
                 m_y = m_y - 10;
                 playerSprite.sprite = player_anim[5];
-                moves = 7;
             }
 
             else if (contact.normal == down)
             {
                 m_y = m_y + 10;
                 playerSprite.sprite = player_anim[0];
-                moves = 6;
-            }
-            else 
-            {
-                //if(collision.collider.gameObject.name == "")
-            
             }
             
-
             thisRect.localPosition = new Vector3 (m_x, m_y, thisRect.localPosition.z);
 
             
@@ -213,6 +180,16 @@ public class PlayerController : MonoBehaviour
         if (collision.gameObject.tag == "Gem")
         {
             gems++;
+
+            if (collision.gameObject.GetComponent<Image>().sprite.name == "Green_Crystal_Icon") 
+                GemValues.greenGem++;
+
+            if (collision.gameObject.GetComponent<Image>().sprite.name == "Blue_Crystal_2") 
+                GemValues.blueGem++;
+
+            if (collision.gameObject.GetComponent<Image>().sprite.name == "Purple_Crystal_Icon_2") 
+                GemValues.purpleGem++;
+
             Destroy(collision.gameObject);       
         }
         

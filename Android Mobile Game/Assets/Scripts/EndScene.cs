@@ -15,21 +15,18 @@ public class EndScene : MonoBehaviour
 
     private void Start()
     {
-        maxGems = GameObject.FindGameObjectsWithTag("Gem").Length;
-        levelText.text = SceneManager.GetActiveScene().buildIndex.ToString();
-        if (SceneManager.GetActiveScene().buildIndex == 0)
-            levelText.text = "Tutorial";
+        maxGems = GameObject.FindGameObjectsWithTag("Gem").Length;    
     }
 
     public void EndGame(int gems, int moves)
     {
         EndScreen.SetActive(true);
         if (gems == maxGems && moves >= movesLeftForWin)
-            starRatingText.text = "You have finished Level: " + SceneManager.GetActiveScene().buildIndex + " with a GOLD star rating!";
+            starRatingText.text = "You have finished Level: " + levelText.text + " with a GOLD star rating!";
         else if (gems < maxGems && moves >= movesLeftForWin)
-            starRatingText.text = "You have finished Level: " + SceneManager.GetActiveScene().buildIndex + " with a SILVER star rating!";
+            starRatingText.text = "You have finished Level: " + levelText.text + " with a SILVER star rating!";
         else if (gems < maxGems && moves < movesLeftForWin)
-            starRatingText.text = "You have finished Level: " + SceneManager.GetActiveScene().buildIndex + "  with a BRONZE star rating!";                
+            starRatingText.text = "You have finished Level: " + levelText.text + "  with a BRONZE star rating!";                
     }
     public void NextLevel() 
     {
