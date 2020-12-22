@@ -21,12 +21,27 @@ public class EndScene : MonoBehaviour
     public void EndGame(int gems, int moves)
     {
         EndScreen.SetActive(true);
-        if (gems == maxGems && moves >= movesLeftForWin)
-            starRatingText.text = "You have finished Level: " + levelText.text + " with a GOLD star rating!";
-        else if (gems < maxGems && moves >= movesLeftForWin)
-            starRatingText.text = "You have finished Level: " + levelText.text + " with a SILVER star rating!";
-        else if (gems < maxGems && moves < movesLeftForWin)
-            starRatingText.text = "You have finished Level: " + levelText.text + "  with a BRONZE star rating!";                
+
+        if (maxGems == 0)
+        {
+            if (moves >= movesLeftForWin)
+                starRatingText.text = "You have finished Level: " + levelText.text + " with a GOLD star rating!";
+            else if (moves < movesLeftForWin)
+                starRatingText.text = "You have finished Level: " + levelText.text + " with a SILVER star rating!";
+            else if (moves < movesLeftForWin-5)
+                starRatingText.text = "You have finished Level: " + levelText.text + "  with a BRONZE star rating!";
+        }
+        else 
+        {
+            if (gems == maxGems && moves >= movesLeftForWin)
+                starRatingText.text = "You have finished Level: " + levelText.text + " with a GOLD star rating!";
+            else if (gems < maxGems && moves >= movesLeftForWin)
+                starRatingText.text = "You have finished Level: " + levelText.text + " with a SILVER star rating!";
+            else if (gems < maxGems && moves < movesLeftForWin)
+                starRatingText.text = "You have finished Level: " + levelText.text + "  with a BRONZE star rating!";
+
+
+        }
     }
     public void NextLevel() 
     {
