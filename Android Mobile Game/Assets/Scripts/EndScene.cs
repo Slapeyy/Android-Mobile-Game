@@ -28,16 +28,18 @@ public class EndScene : MonoBehaviour
                 starRatingText.text = "You have finished Level: " + levelText.text + " with a GOLD star rating!";
             else if (moves < movesLeftForWin)
                 starRatingText.text = "You have finished Level: " + levelText.text + " with a SILVER star rating!";
-            else if (moves < movesLeftForWin-5)
+            //else if (moves < movesLeftForWin-5)
+            else
                 starRatingText.text = "You have finished Level: " + levelText.text + "  with a BRONZE star rating!";
         }
         else 
         {
             if (gems == maxGems && moves >= movesLeftForWin)
                 starRatingText.text = "You have finished Level: " + levelText.text + " with a GOLD star rating!";
-            else if (gems < maxGems && moves >= movesLeftForWin)
+            if ((gems < maxGems && moves >= movesLeftForWin) || (gems == maxGems && moves < movesLeftForWin))
                 starRatingText.text = "You have finished Level: " + levelText.text + " with a SILVER star rating!";
-            else if (gems < maxGems && moves < movesLeftForWin)
+            //else if (gems < maxGems && moves < movesLeftForWin)
+            else
                 starRatingText.text = "You have finished Level: " + levelText.text + "  with a BRONZE star rating!";
 
 

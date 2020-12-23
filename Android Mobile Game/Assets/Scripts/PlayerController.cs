@@ -51,7 +51,11 @@ public class PlayerController : MonoBehaviour
 
         movesTxt.text = moves.ToString();
 
-        if (moves <= 0) retryScreen.SetActive(true);
+        if (moves <= 0)
+        {
+            retryScreen.SetActive(true);
+            //AudioController.Instance.gameObject.GetComponent<AudioSource>().Pause();
+        }
     }
 
 
@@ -63,7 +67,7 @@ public class PlayerController : MonoBehaviour
             return; 
         }
 
-        float speed = 150;
+        float speed = 450;
             //Up = 1, Down = 2, Right = 3, Left = 4
         switch (direction)
         {
@@ -110,14 +114,16 @@ public class PlayerController : MonoBehaviour
     public void RestartLevel() 
     { 
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+        //AudioController.Instance.gameObject.GetComponent<AudioSource>().Play();
     }
 
     public void MainMenu()
     {
         SceneManager.LoadScene("Main Menu");
+        //AudioController.Instance.gameObject.GetComponent<AudioSource>().Play();
     }
 
-    
+
     private void OnCollisionStay2D(Collision2D collision)
     {
         ContactPoint2D contact = collision.GetContact(0);
@@ -181,13 +187,22 @@ public class PlayerController : MonoBehaviour
         {
             gems++;
 
-            if (collision.gameObject.GetComponent<Image>().sprite.name == "Green_Crystal_Icon") 
+            if (collision.gameObject.GetComponent<Image>().sprite.name == "Green_Crystal_1") 
                 GemValues.greenGem++;
 
-            if (collision.gameObject.GetComponent<Image>().sprite.name == "Blue_Crystal_2") 
+            if (collision.gameObject.GetComponent<Image>().sprite.name == "Green_Crystal_2")
+                GemValues.greenGem++;
+
+            if (collision.gameObject.GetComponent<Image>().sprite.name == "Blue_Crystal_1") 
                 GemValues.blueGem++;
 
-            if (collision.gameObject.GetComponent<Image>().sprite.name == "Purple_Crystal_Icon_2") 
+            if (collision.gameObject.GetComponent<Image>().sprite.name == "Blue_Crystal_2")
+                GemValues.blueGem++;
+
+            if (collision.gameObject.GetComponent<Image>().sprite.name == "Purple_Crystal_1") 
+                GemValues.purpleGem++;
+
+            if (collision.gameObject.GetComponent<Image>().sprite.name == "Purple_Crystal_2")
                 GemValues.purpleGem++;
 
             Destroy(collision.gameObject);       
